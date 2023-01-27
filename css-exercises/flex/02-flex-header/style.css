@@ -15,7 +15,7 @@
   padding: 4px 32px;
 }
 
-ul {
+ul  {
   /* this removes the dots on the list items*/
   display: flex;
   list-style-type: none;
