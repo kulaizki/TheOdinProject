@@ -83,7 +83,7 @@ a {
 }
 
 .title {
-    margin: 2rem;
+    margin: 3rem;
 }
 
 .title h1 {
@@ -97,34 +97,20 @@ span {
     font-family: monospace;
 }
 
-.card {
+.card1 {
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    height: 55rem;
-    width: 100rem;
+    height: 60vh;
+    width: 80vw;
     border-radius: 2rem;
     background-color: rgba(24, 24, 24, 0.3);
     transform-origin: center; /* from center, expand all sides */
     transition: transform .3s;
 }
 
-.card:hover {
+.card1:hover {
     transform: scale(1.05);
-}
-
-.intro {
-    color: aliceblue;
-    padding: 3rem;
-    font-size: 2.8rem;
-    text-align: justify;
-    text-shadow: 0 0 1.3rem rgb(246, 242, 247);
-}
-
-.intro span {
-    font-family: 'Source Sans Pro', sans-serif;
-    text-shadow: 0 0 1rem rgb(63, 13, 243);
-    font-size: 4rem;
 }
 
 .code-container {
@@ -133,12 +119,23 @@ span {
 }
 
 .code {
+    font-size: 1.75rem;
+    border-radius: 2rem;
     width: 100vw;
 }
 
-
-code {
-    font-size: 1.75rem;
-    border-radius: 2rem;
+.intro {
+    color: aliceblue;
+    margin: 2rem;
+    padding: 2.5rem 4rem;
+    font-size: 2.41rem;
+    text-align: justify;
+    text-shadow: 0 0 1.3rem rgb(246, 242, 247);
+    line-height: 4rem;
 }
 
+.intro span {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 0 0 1rem rgb(63, 13, 243);
+    font-size: 4rem;
+}
