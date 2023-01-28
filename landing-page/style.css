@@ -37,7 +37,7 @@ body {
 }
 
 ul {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
     display: flex;
     gap: 1rem;
@@ -46,6 +46,7 @@ ul {
 
 a {
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -55,6 +56,7 @@ a {
 }
 
 .left h1 {
+    font-family: 'Source Sans Pro', sans-serif;
     margin-right: 1rem;
     color: #540366;
     text-shadow: 0 0 1.5rem rgb(232, 50, 217); 
@@ -70,7 +72,7 @@ a {
 }
 
 .right a {
-    color: #6b2a78;
+    color: #3b3a3b;
     font-size: 2.5rem;
 }
 
@@ -81,7 +83,6 @@ a {
 }
 
 .title {
-    display: flex;
     margin: 2rem;
 }
 
@@ -97,9 +98,47 @@ span {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
     height: 55rem;
     width: 100rem;
     border-radius: 2rem;
     background-color: rgba(24, 24, 24, 0.3);
-    
+    transform-origin: center; /* from center, expand all sides */
+    transition: transform .3s;
 }
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.intro {
+    color: aliceblue;
+    padding: 3rem;
+    font-size: 2.8rem;
+    text-align: justify;
+    text-shadow: 0 0 1.3rem rgb(246, 242, 247);
+}
+
+.intro span {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 0 0 1rem rgb(63, 13, 243);
+    font-size: 4rem;
+}
+
+.code-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.code {
+    width: 100vw;
+}
+
+
+code {
+    font-size: 1.75rem;
+    border-radius: 2rem;
+}
+
