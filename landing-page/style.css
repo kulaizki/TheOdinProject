@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?&family=Source+Sans+Pro&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@ body {
     background: linear-gradient(to right, #590e4c, #120e5c);
     display: flex;
     flex-direction: column;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     align-items: center;
 }
 
@@ -43,6 +45,7 @@ ul {
 }
 
 a {
+    font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
 }
 
@@ -74,6 +77,7 @@ a {
 .right a:hover {
     text-shadow: 0 0 1.5rem rgb(214, 11, 221); 
     color: #2b262c;
+    text-decoration: underline;
 }
 
 .title {
